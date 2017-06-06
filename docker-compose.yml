@@ -1,0 +1,17 @@
+web:
+  container_name: web
+  build: ./app
+  volumes:
+    - "./app/src:/src"
+  ports:
+    - "3000:3000"
+  command: node app.js
+
+nginx:
+  container_name: nginx
+  restart: always
+  build: ./nginx
+  ports:
+    - "80:80"
+  links:
+    - web
