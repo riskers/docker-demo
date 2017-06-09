@@ -25,3 +25,5 @@ app
   .use(router.allowedMethods())
 
 app.listen(3000)
+
+console.log('open localhost:3000')

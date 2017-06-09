@@ -1,8 +1,6 @@
 web:
   container_name: web
   build: ./app
-  volumes:
-    - "./app/src:/src"
   ports:
     - "3000:3000"
   command: node app.js
