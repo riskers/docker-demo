@@ -31,6 +31,10 @@
   docker run -it --name demo -v ~/docker-demo/1-docker-app/src:/src -p 3000:3000 docker-demo
   ```
 
+  打开 `localhost:3000` 即可看到我们的应用
+
+  如果 -p 是 `80:3000`，打开 `localhost` 即可
+
 5. 停止镜像
 
   ```shell
