@@ -2,9 +2,11 @@ FROM node:8
 
 MAINTAINER riskers
 
+RUN mkdir /src
+
 WORKDIR /src
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
-RUN cnpm install
+ADD src /src
+RUN npm install --registry=https://registry.npm.taobao.org
 
 EXPOSE 3000
 
