@@ -3,8 +3,8 @@ FROM node:8
 MAINTAINER riskers
 
 WORKDIR /src
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
-RUN cnpm install
+COPY ./src/package.json .
+RUN npm install --registry=https://registry.npm.taobao.org
 
 EXPOSE 3000
 
