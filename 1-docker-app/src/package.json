@@ -1,0 +1,17 @@
+{
+  "name": "docker-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.10.0",
+    "koa": "^2.2.0",
+    "koa-art-template": "^1.1.0",
+    "koa-router": "^7.2.0"
+  }
+}
