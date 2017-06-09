@@ -2,8 +2,10 @@ FROM node:8
 
 MAINTAINER riskers
 
+RUN mkdir /src
+
 WORKDIR /src
-COPY ./src/package.json .
+ADD src /src
 RUN npm install --registry=https://registry.npm.taobao.org
 
 EXPOSE 3000

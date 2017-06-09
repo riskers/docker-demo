@@ -28,7 +28,7 @@
 4. 运行镜像
 
   ```shell
-  docker run -it --name demo -v ~/docker-demo/1-docker-app/src:/src -p 3000:3000 docker-demo
+  docker run -it --name demo -p 3000:3000 docker-demo
   ```
 
   打开 `localhost:3000` 即可看到我们的应用
